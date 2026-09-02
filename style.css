@@ -239,3 +239,59 @@ footer{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     letter-spacing: 1px;
 }
+@media (max-width: 1024px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .container,
+    .card,
+    .menu-items,
+    .contact-info,
+    .contact-form,
+    .home,
+    .footer {
+        text-align: center;
+    }
+
+    .card img,
+    .menu-items img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar ul {
+        padding: 0;
+        justify-content: center;
+    }
+
+    .container,
+    .card,
+    .menu-items,
+    .contact-info,
+    .contact-form,
+    .home,
+    .footer {
+        text-align: center;
+    }
+
+    .contact-form input {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}
